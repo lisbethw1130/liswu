@@ -51,4 +51,4 @@ production:
   <<: *default
   database: liswu_production
   username: liswu
-  password: <%= ENV['LISWU_DATABASE_PASSWORD'] %>
+  password: <%= Rails.application.credentials.mysql_password %>
