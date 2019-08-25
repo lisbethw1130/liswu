@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: liswu_production
-  username: liswu
+  username: admin
   password: <%= Rails.application.credentials.mysql_password %>
+  host: 'liswu.ckcsus5lllm6.ap-southeast-1.rds.amazonaws.com'
